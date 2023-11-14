@@ -1,0 +1,393 @@
+@charset "ISO-8859-1";*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+body{
+    background: black;
+    color: white;
+    position: relative;
+}
+.name{
+    font-size: 40px;
+    margin-top: 20px  ;
+    letter-spacing: 2x;
+
+}
+#ar
+{
+    font-size: 35px;
+    padding-left: 0;
+}
+#h{
+    font-weight: bold;
+    font-size: 50px;
+    color: orange;
+
+   
+    
+    
+}
+.detail h2
+{
+    margin-top: 20px;
+    color: orange;
+}
+.detail p .hl
+{
+    color:rgb(229, 255, 0);
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(first.avif);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+    
+}
+    nav ul li a{
+color: skyblue;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+font-weight: 600;
+}
+nav ul li a::after{
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+.header-text
+{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+ #name{
+    color: orange;
+
+}
+/* -------------about------ */
+#about{
+    padding: 80px 0;
+   
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+        width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+width: 50%;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    margin-top: 10px;
+background-color: cornflowerblue;    
+    
+}
+.contact-text {
+    margin: auto;
+    position: relative;
+}
+.contact-text h4 {
+    margin: 30px 0px;
+    color: orange;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2{
+    font-size:50px ;
+    color:  #ababab;
+}
+.contact-text p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+
+}
+.contact-list
+{
+    margin-bottom: 3rem;
+
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+
+}
+.contact-list li a{
+    display: block;
+    color:wheat ;
+    font-size: 20px;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: orangered;
+}
+.contact-icons a{
+    height: 40px;
+    width: 40px;
+    background:yellow;
+    border-radius: 0.5rem;
+    color: yellow;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: all .40s ease;
+}
+.contact-icons a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: white;
+    background: orangered;
+}
+
+.contact-form form{
+    position: relative;
+    margin-right: 30px;
+    margin-top: 80px;
+
+}
+.contact-form form input,
+form textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 18px;
+    background: #12141c;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+
+}
+.contact-form form .send{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500px;
+    background: orangered;
+    color: white;
+    width: 190px;
+    transition: all .40s ease;
+    cursor: pointer;
+}
+.contact-form form .send:hover{
+    transform: scale(1.01) translateY(-5px);
+    background-color:darkorchid;
+    color: darkblue;
+    box-shadow: inset;
+}
+.top
+{
+   
+    background: orangered;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-left: 92.5%;
+    margin-bottom: 30px;
+}
+.top:hover
+{
+    background-color:chartreuse;
+    transition: 0.5s;
+    transform: scale(1.03) translateY(-8px);
+}
+.crf{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 500px;
+
+
+    justify-content: center;
+   align-items: center;
+}
+#project
+{
+    background-image: url(images.jpeg);
+
+}
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.row img{height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+
+}
+.row{
+    padding: 25px;
+    background: #12141c;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.row h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.row h6{
+    color: bisque;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.row-icon i{
+    font-size: 21px;
+}
+.row:hover{
+    transform: scale(1.01)translateY(-5px);
+    cursor: pointer;
+}
+.main-text
+{
+    text-align: center;
+}
+.main-text h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color:  #ababab;
+}
+.main-text h4{
+    color:orange;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cert h1{
+    
+    display: grid;
+    justify-content: center;
+    font-weight: 600;
+    margin: 30px;
+   font-size: 40px;
+   
+
+}
+.cert1 img{
+
+    margin-left: 370px;
+   
+    border-radius: 10px;
+}
+
+    .resume
+    {
+        border: 2px solid red;
+            margin-top: 20%; 
+            margin-right: 200px;  
+            padding: 10px;  
+            border-radius: 40px;   
+            background-color: yellow;
+            transition: 0.5s;
+    }
+    .cv
+    {
+        text-decoration: none;
+        color: brown;
+        font-size: 25px;
+        font-family: cursive;
+        font-weight: 600;
+    }
+    .resume:hover
+    {
+      background-color: aqua;
+      transform: scale(1.01)translateY(-7px);
+    }
+    .cv:hover{
+        color: #12141c;
+    }
